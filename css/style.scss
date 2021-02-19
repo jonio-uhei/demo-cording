@@ -1,0 +1,172 @@
+@charset "UTF-8";
+*{
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+li{
+    list-style:none;
+}
+img{
+    max-width:100%;
+}
+/*--------------------------------ハンバーガーメニュー-------------------------------*/
+.nav{
+    position: absolute;
+    height: 100vh;
+    width: 60vw;
+    left: -110vw;
+    top: 0;
+    background-color:#000;
+    opacity:0.8;
+    transition: 0.5s;
+}
+.nav-wrap{
+    padding: 36px 50px;
+    width: 300px;
+    margin:0 auto;
+    &__link{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        margin-bottom: 14px;
+        transition: .5s;
+    }
+}
+.hamburger {
+    display: block;
+    position: absolute;
+    right: 40px;
+    width: 30px;
+    top:40px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    &__line1 {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        transition: 1s;
+        border-radius: 4px;
+        top: 6px;
+    }
+    &__line2 {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        transition: 1s;
+        border-radius: 4px;
+        bottom: 0px;
+    }
+}
+.line_2 {
+    transform:translateY(-1px) rotate(45deg);
+}
+.line_3 {
+    transform: translateY(7px) rotate(-45deg);
+    bottom: 0;
+}
+.in{
+    transform: translateX(100vw);
+}
+/*----------------------------ハンバーガーメニューここまで-----------------------------------------*/
+
+
+.logo{
+    width: 182px;
+    margin-top: 30px;
+}
+header{
+    padding: 24px 35px;
+    position:relative;
+}
+.container{
+    max-width:1360px;
+    margin:0 auto;
+    padding: 0 40px;
+}
+.section-title{
+    margin-top: 65px;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 30px;
+    display: none;
+}
+.products{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-top: 30px;
+    &__list{
+        width: 47%;
+        margin-bottom: 40px;
+    }
+    &__title{
+        font-size: 12px;
+        margin-top: 12px;
+        line-height:1.5em;
+    }
+    &__price{
+        font-size: 12px;
+        line-height:1.5em;
+    }
+}
+.more-view{
+    text-align: center;
+    font-size: 14px;
+}
+.pagenation{
+    display: flex;
+    justify-content:space-between;
+    width: 55px;
+    margin:0 auto;
+    &__link{
+        font-size: 14px;
+    }
+}
+.sns{
+    margin-top: 100px;
+    display: flex;
+    &__instagram,&__twitter,&__facebook{
+        font-size:12px;
+    }
+    &__twitter,&__facebook{
+        margin-left: 25px;
+    }
+}
+footer{
+    p{
+        font-size: 10px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width:1024px) { 
+    header{
+        padding-top: 30px!important;
+        padding-bottom: 30px!important;
+    }
+    .logo{
+        margin-top: 0;
+    }
+    .products{
+        &__list{
+            width: 23%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
