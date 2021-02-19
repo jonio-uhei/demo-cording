@@ -20,8 +20,8 @@ img {
 /*--------------------------------ハンバーガーメニュー-------------------------------*/
 .nav {
   position: absolute;
-  height: 100vh;
-  width: 60vw;
+  height: 130vh;
+  width: 69vw;
   left: -110vw;
   top: 0;
   background-color: #000;
@@ -32,8 +32,8 @@ img {
 
 .nav-wrap {
   padding: 36px 50px;
-  width: 300px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .nav-wrap__link {
@@ -43,6 +43,10 @@ img {
   margin-bottom: 14px;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.nav-wrap li {
+  margin-top: 60px;
 }
 
 .hamburger {
@@ -204,4 +208,3 @@ footer p {
     width: 23%;
   }
 }
-/*# sourceMappingURL=style.css.map */
